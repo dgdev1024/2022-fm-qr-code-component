@@ -1,0 +1,17 @@
+.qrCardContainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  place-items: center;
+  gap: 48px;
+
+  width: 85%;
+  min-height: calc(100vh - 32px);
+  max-width: 1200px;
+  margin: 0px auto;
+}
+
+@media (min-width: 800px) {
+  .qrCardContainer:has(> .qrUserCard) {
+    grid-template-columns: 1fr 1fr;
+  }
+}

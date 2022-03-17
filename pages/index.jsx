@@ -2,10 +2,12 @@
  * @file pages/index.jsx
  */
 
+import QrCardContainer from "../components/qr-card-container";
+
 export default function Index() {
   return (
     <>
-      <h1>Hello, World!</h1>
+      <QrCardContainer />
     </>
   );
 }

@@ -1,0 +1,52 @@
+:root {
+  /* Color Variables */
+  --color-white: hsl(0, 0%, 100%);
+  --color-white-faded: hsla(0, 0%, 100%, 0.8);
+  --color-light-gray: hsl(212, 45%, 89%);
+  --color-light-gray-faded: hsla(212, 45%, 89%, 0.8);
+  --color-grayish-blue: hsl(220, 15%, 55%);
+  --color-grayish-blue-faded: hsla(220, 15%, 55%, 0.8);
+  --color-dark-blue: hsl(218, 44%, 22%);
+  --color-dark-blue-faded: hsla(218, 44%, 22%, 0.8);
+  --color-blue: hsl(216, 99%, 60%);
+  --color-blue-faded: hsla(216, 99%, 60%, 0.8);
+
+  /* Font Variables */
+  --font-family-normal: "Outfit", sans-serif;
+  --font-size-normal: 15px;
+  --font-weight-normal: 400;
+  --font-weight-bold: 700;
+}
+
+/* CSS Reset */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: var(--font-family-normal);
+}
+
+/* Default Font Size */
+html {
+  font-size: var(--font-size-normal);
+  background-color: var(--color-light-gray);
+}
+
+footer {
+  display: grid;
+  place-items: center;
+  height: 32px;
+}
+
+footer p {
+  text-align: center;
+}
+
+footer a {
+  text-decoration: none;
+  color: var(--color-blue);
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
