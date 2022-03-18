@@ -7,7 +7,7 @@ import "../global.css";
 
 export default function App({ Component, pageProps }) {
   return (
-    <>
+    <main>
       <Head>
         <title>Frontend Mentor Challenge | QR Code Component</title>
         <link rel="shortcut icon" href="/images/favicon-32x32.png" />
@@ -26,6 +26,6 @@ export default function App({ Component, pageProps }) {
           .
         </p>
       </footer>
-    </>
+    </main>
   );
 }
