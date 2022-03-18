@@ -10,12 +10,19 @@
   --color-dark-blue-faded: hsla(218, 44%, 22%, 0.8);
   --color-blue: hsl(216, 99%, 60%);
   --color-blue-faded: hsla(216, 99%, 60%, 0.8);
+  --color-red: hsl(0, 99%, 60%);
+  --color-red-faded: hsla(0, 99%, 60%, 0.8);
+  --color-green: hsl(130, 99%, 60%);
+  --color-green-faded: hsla(130, 99%, 60%, 0.8);
 
   /* Font Variables */
   --font-family-normal: "Outfit", sans-serif;
   --font-size-normal: 15px;
   --font-weight-normal: 400;
   --font-weight-bold: 700;
+
+  /* Time Variables */
+  --time-transition: 0.25s;
 }
 
 /* CSS Reset */

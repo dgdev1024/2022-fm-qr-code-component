@@ -1,0 +1,83 @@
+.qrFormCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+
+  min-width: 320px;
+  max-width: 320px;
+  padding: 20px;
+  background-color: var(--color-white-faded);
+  border-radius: 32px;
+
+  box-shadow: 16px 16px 16px rgba(0, 0, 0, 0.1);
+}
+
+.qrFormCardElement {
+  position: relative;
+  width: 100%;
+}
+
+.qrFormCardText {
+  display: block;
+  width: 100%;
+  padding: 16px 8px;
+  resize: none;
+  color: var(--color-dark-blue);
+  background-color: var(--color-white-faded);
+  border: none;
+  border-radius: 8px;
+  box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.1);
+  transition-property: background-color;
+  transition-duration: var(--time-transition);
+}
+
+.qrFormCardText:hover,
+.qrFormCardText:focus {
+  background-color: var(--color-white);
+  outline: none;
+}
+
+.qrFormCardLabel {
+  position: absolute;
+  top: 14px;
+  left: 8px;
+  transition-property: top font-size color;
+  transition-duration: var(--time-transition);
+}
+
+.qrFormCardText:focus + .qrFormCardLabel,
+.qrFormCardText:not([value=""]) + .qrFormCardLabel {
+  top: 1px;
+  font-size: 0.7rem;
+}
+
+.qrFormCardTextarea:empty + .qrFormCardLabel {
+  top: 14px;
+  left: 8px;
+  font-size: 1rem;
+}
+
+.qrFormCardTextarea:focus + .qrFormCardLabel {
+  top: 1px;
+  font-size: 0.7rem;
+}
+
+.qrFormCardSubmit {
+  display: block;
+  width: 100%;
+  padding: 16px 8px;
+  color: var(--color-dark-blue);
+  background-color: var(--color-green-faded);
+  border: none;
+  border-radius: 8px;
+  box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.1);
+  transition-property: background-color;
+  transition-duration: var(--time-transition);
+  cursor: pointer;
+}
+
+.qrFormCardSubmit {
+  background-color: var(--color-green);
+}

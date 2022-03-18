@@ -1,0 +1,40 @@
+.addButton {
+  display: grid;
+  place-items: center;
+  position: fixed;
+  bottom: 32px;
+  right: 32px;
+  width: 64px;
+  height: 64px;
+  color: var(--color-white);
+  background-color: var(--color-blue-faded);
+  border: none;
+  border-radius: 50%;
+  box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition-property: background-color;
+  transition-duration: var(--time-transition);
+}
+
+.addButton svg {
+  width: 50%;
+  transform: rotateZ(0deg);
+  transition-property: transform;
+  transition-duration: var(--time-transition);
+}
+
+.addButton:hover {
+  background-color: var(--color-blue);
+}
+
+.addButtonToggled {
+  background-color: var(--color-red-faded);
+}
+
+.addButtonToggled:hover {
+  background-color: var(--color-red);
+}
+
+.addButtonToggled svg {
+  transform: rotateZ(45deg);
+}

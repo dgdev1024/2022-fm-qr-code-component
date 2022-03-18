@@ -1,16 +1,47 @@
 .qrCard {
+  position: relative;
+
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 16px;
 
+  min-width: 320px;
   max-width: 320px;
   padding: 20px;
   background-color: var(--color-white-faded);
   border-radius: 32px;
 
   box-shadow: 16px 16px 16px rgba(0, 0, 0, 0.1);
+}
+
+.qrCardDeleteButton {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  width: 32px;
+  height: 32px;
+  display: grid;
+  place-items: center;
+  color: var(--color-white);
+  background-color: var(--color-red-faded);
+  border: none;
+  border-radius: 50%;
+  box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.1);
+  opacity: 0.2;
+  transition-property: opacity background-color;
+  transition-duration: var(--time-transition);
+  cursor: pointer;
+}
+
+.qrCardDeleteButton svg {
+  width: 50%;
+}
+
+.qrCardDeleteButton:hover {
+  background-color: var(--color-red);
+  opacity: 1;
 }
 
 .qrCodeImageContainer {
